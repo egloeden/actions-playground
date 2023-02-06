@@ -9,7 +9,7 @@ jobs:
     runs-on: ubunto-latest
   
     steps:
-      - name: Print Date Ubunto
+      - name: Print Date Ubunto!
         run: date
   
   print_date_windows:
