@@ -4,7 +4,7 @@ on:
   push:
   
 jobs:
-  print_date_ubuntu_01:
+  print_date_ubuntu:
     name: Print Date Ubunto!
     runs-on: ubunto-latest
   
@@ -12,31 +12,31 @@ jobs:
       - name: Print Date Ubunto
         run: date
   
-  print_date_windows_02:
-    name: date
+  print_date_windows:
+    name: Print Date Windows!
     runs-on: windows-latest
     
     steps:
       - name: Print Date Windows!
         run: date
   
-  print_date_macos_03:
-    name: date
+  print_date_macos:
+    name: Print Date Macos!
     runs-on: macos-latest
     
     steps:
       - name: Print Date Macos!
         run: date
   
-  print_date_ubuntu_04:
-    name: date
+  print_date_final:
+    name: Print Date Final!
     runs-on: ubunto-latest
        
     needs: 
-      - print_date_ubuntu_01
-      - print_date_windows_02
-      - print_date_ubuntu_03
+      - print_date_ubuntu
+      - print_date_windows
+      - print_date_ubuntu
 
 steps:
-      - name: Print Date Ubunto
+      - name: Print Date Final!
         run: date
