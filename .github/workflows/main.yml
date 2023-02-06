@@ -1,0 +1,25 @@
+name: "Data atual"
+
+on:
+  push:
+  
+jobs:
+  print_date_ubuntu:
+    name: date
+    runs-on: ubunto-latest
+  
+  print_date_windows:
+    name: date
+    runs-on: windows-latest
+  
+  print_date_macos:
+    name: date
+    runs-on: macos-latest
+  
+  print_date_ubuntu:
+    name: date
+    runs-on: ubunto-latest
+    needs: 
+      - print_date_ubuntu
+      - print_date_windows
+      - print_date_ubuntu
