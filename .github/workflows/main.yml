@@ -1,4 +1,4 @@
-name: "Exercicio 01 - Data atual"
+name: "Exercicio 01 Data atual"
 
 on:
   push:
@@ -32,11 +32,11 @@ jobs:
     name: Print Date Final!
     runs-on: ubunto-latest
        
-    needs: 
+  needs:
       - print_date_ubuntu
       - print_date_windows
       - print_date_ubuntu
 
-steps:
+    steps:
       - name: Print Date Final!
         run: date
