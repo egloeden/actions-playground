@@ -3,7 +3,7 @@ name: "Exercicio 01 Data atual"
 on:
   push:
   
-  jobs:
+jobs:
   print_date_ubuntu:
     name: Print Date Ubuntu!
     runs-on: ubunto-latest
