@@ -5,11 +5,11 @@ on:
   
 jobs:
   print_date_ubuntu:
-    name: Print Date Ubunto!
+    name: Print Date Ubuntu!
     runs-on: ubunto-latest
   
     steps:
-      - name: Print Date Ubunto!
+      - name: Print Date Ubuntu!
         run: date
   
   print_date_windows:
@@ -28,9 +28,9 @@ jobs:
       - name: Print Date Macos!
         run: date
   
-  print_date_ubunto_final:
-    name: Print Date Ubunto Final!
-    runs-on: ubunto-latest
+  print_date_ubuntu_final:
+    name: Print Date Ubuntu Final!
+    runs-on: ubuntu-latest
        
   needs:
       - print_date_ubuntu
@@ -38,5 +38,5 @@ jobs:
       - print_date_macos
 
     steps:
-      - name: Print Date Ubunto Final!
+      - name: Print Date Ubuntu Final!
         run: date
