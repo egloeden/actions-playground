@@ -28,8 +28,8 @@ jobs:
       - name: Print Date Macos!
         run: date
   
-  print_date_final:
-    name: Print Date Final!
+  print_date_ubunto_final:
+    name: Print Date Ubunto Final!
     runs-on: ubunto-latest
        
   needs:
@@ -38,5 +38,5 @@ jobs:
       - print_date_ubuntu
 
     steps:
-      - name: Print Date Final!
+      - name: Print Date Ubunto Final!
         run: date
