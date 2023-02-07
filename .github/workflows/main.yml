@@ -35,7 +35,7 @@ jobs:
   needs:
       - print_date_ubuntu
       - print_date_windows
-      - print_date_ubuntu
+      - print_date_macos
 
     steps:
       - name: Print Date Ubunto Final!
